@@ -2,8 +2,8 @@ $(function() {
 	// This will run on windows onload.
 	
 	// Set onmouseover for the image.
-	$('#graphicPhoto01').bind('mouseover', function(event) {
-		log('Whoa!');
+	$('div.warning a').bind('click', function(event) {
+		log('Target: {0}'.format($(event.target).parent().parent().css('background-color', 'red')));
 	});
 	
 	// Set style for the console box.

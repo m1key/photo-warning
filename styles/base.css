@@ -118,22 +118,22 @@ div.description a:hover {
 	color: #FFFFFF;
 }
 
-div.information a:link {
+div.information a:link, div.warning a:link {
 	text-decoration: underline;
 	color: #FFFFFF;
 }
 
-div.information a:visited {
+div.information a:visited, div.warning a:visited {
 	text-decoration: underline;
 	color: #FFFFFF;
 }
 
-div.information a:active {
+div.information a:active, div.warning a:active {
 	text-decoration: underline;
 	color: #FFFFFF;
 }
 
-div.information a:hover {
+div.information a:hover, div.warning a:hover {
 	text-decoration: none;
 	color: #FFFFFF;
 }
@@ -201,4 +201,19 @@ div.information {
 
 img.resizeWidthToRegular {
 	width: 990px;
+}
+
+.hidden {
+	visibility: hidden;
+}
+
+.aroundImage  {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+}
+
+.warning {
+	position: relative;
+	top: 100px;
 }
