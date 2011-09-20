@@ -3,7 +3,7 @@ $(function() {
 	
 	// Set onmouseover for the image.
 	$('div.warning a').bind('click', function(event) {
-		log('Target: {0}'.format($(event.target).parent().parent().css('background-color', 'red')));
+		log('Target: {0}'.format($(event.target).closest('div.aroundImage').css('background-color', 'red')));
 	});
 	
 	// Set style for the console box.
