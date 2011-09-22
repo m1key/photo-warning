@@ -5,6 +5,7 @@ $(function() {
 	$('div.warning a').bind('click', function(event) {
 		var $hiddenImage = $(event.target).closest('div.aroundImage').children('img');
 		log('Target: {0}'.format($hiddenImage.attr('src')));
+		$hiddenImage.css('visibility', 'visible');
 	});
 	
 	// Set style for the console box.
