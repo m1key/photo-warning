@@ -3,10 +3,11 @@ $(function() {
 	
 	// Set onmouseover for the image.
 	$('div.warning a').bind('click', function(event) {
-		var $hiddenImage = $(event.target).closest('div.aroundImage').children('img');
-		log('Target: {0}'.format($hiddenImage.attr('src')));
+		var $warningMessage = $(event.target);
+		var $hiddenImage = $warningMessage.closest('div.aroundImage').children('img');
+		
 		$hiddenImage.css('visibility', 'visible');
-		$(event.target).css('visibility', 'hidden');
+		$warningMessage.css('visibility', 'hidden');
 	});
 	
 	// Set style for the console box.
