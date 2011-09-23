@@ -12,6 +12,7 @@ $(function() {
 		
 		$hiddenImage.show();
 		$warningMessage.hide();
+		$aroundImage.css('cursor', 'default');
 	});
 	
 	// Set style for the console box.
