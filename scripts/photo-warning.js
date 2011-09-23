@@ -1,10 +1,14 @@
 $(function() {	
 	// This will run on windows onload.
 	
-	// Set onmouseover for the image.
 	$('div.warning a').bind('click', function(event) {
-		var $warningMessage = $(event.target);
-		var $hiddenImage = $warningMessage.closest('div.aroundImage').children('img');
+		var $aroundImage = $(event.target).closest('div.aroundImage').click();
+	});
+	
+	$('div.aroundImage').bind('click', function(event) {
+		var $aroundImage = $(event.target);
+		var $hiddenImage = $aroundImage.children('img');
+		var $warningMessage = $aroundImage.children('div.warning');
 		
 		$hiddenImage.show();
 		$warningMessage.hide();
