@@ -6,8 +6,8 @@ $(function() {
 		var $warningMessage = $(event.target);
 		var $hiddenImage = $warningMessage.closest('div.aroundImage').children('img');
 		
-		$hiddenImage.css('visibility', 'visible');
-		$warningMessage.css('visibility', 'hidden');
+		$hiddenImage.show();
+		$warningMessage.hide();
 	});
 	
 	// Set style for the console box.
